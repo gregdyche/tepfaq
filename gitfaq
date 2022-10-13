@@ -6,20 +6,24 @@ How to create a repository (project)?
 What if web version (origin) is newer (ahead) of local version?
   %git remote -v
   # get name and urls for fetch and push locations
-  
+
   % git remote show origin
   # shows what remote if any you are connected to and status
   # last line of my output says (local out of date)
-  
-  %git pull git@github.com:gregdyche/tepfaq.git 
+
+  %git pull git@github.com:gregdyche/tepfaq.git
   #example to pull down changes for this repository
   #this info can be seen in the %git remote -v example above
-  
+
 Can I create an alias or shortcut for the remote?
   Yes.
   This is done by adding an additional remote.
   For example, I created a shortcut name, faq for my remote.
-  %git remote add faq git@github.com:gregdyche/tepfaq.git 
-  
+  %git remote add faq git@github.com:gregdyche/tepfaq.git
+
+  Appears you can just use origin also, so I'm not sure how useful this is.
+
  What is the difference between 'fetch' and 'pull'?
-  
+  'fetch' just pull down the details about the info, metadata.
+  Still need to merge to get the actual data.
+  'pull' brings down the actual data.
