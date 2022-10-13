@@ -1,1 +1,25 @@
-1. What if web version (origin) is newer (ahead) of local version?
+How to create a repository (project)?
+  1. Create local and push to remote (github)
+  2. Create on github and clone on local
+  3. Clone a existing repository
+
+What if web version (origin) is newer (ahead) of local version?
+  %git remote -v
+  # get name and urls for fetch and push locations
+  
+  % git remote show origin
+  # shows what remote if any you are connected to and status
+  # last line of my output says (local out of date)
+  
+  %git pull git@github.com:gregdyche/tepfaq.git 
+  #example to pull down changes for this repository
+  #this info can be seen in the %git remote -v example above
+  
+Can I create an alias or shortcut for the remote?
+  Yes.
+  This is done by adding an additional remote.
+  For example, I created a shortcut name, faq for my remote.
+  %git remote add faq git@github.com:gregdyche/tepfaq.git 
+  
+ What is the difference between 'fetch' and 'pull'?
+  
